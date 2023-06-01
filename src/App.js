@@ -2,7 +2,10 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
+import Register from "./pages/Register/Register";
 import New from "./pages/new/New";
+import Neweventform1 from "./pages/neweventform/Neweventform1";
+import Neweventform2 from "./pages/neweventform/Neweventform2";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
@@ -19,6 +22,9 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
+            <Route path="newapplicationform" element={<Neweventform1 />} />
+            <Route path="newapplicationform2" element={<Neweventform2 />} />
+            <Route path="register" element={<Register />} />
             <Route path="users">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />
