@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #ffffff;
+  opacity: 1;
+  background-position: center;
+  background-size: 150rem;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.credcontainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin-top: 10rem;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #ffffff 25px
+    ),
+    repeating-linear-gradient(#a991ff60, #e5ddff);
+  box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 39%);
+}
+
+.leftcolumn {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0rem;
+  background-color: whitesmoke;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.rightcolumn {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: x-large;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.leftcolumn input {
+  margin: 0.5rem 2rem;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+}
+.leftcolumn input:focus {
+  outline: 2px solid #6439ff5d;
+  box-shadow: 0px 0px 15px 2px #6439ff62;
+}
+
+.forgotpass {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.loginbutton button {
+  border-radius: 15px;
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+
+  color: white;
+  width: 35%;
+  background-image: linear-gradient(#6439ff, #3d249b);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginbutton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.register {
+  border-top-right-radius: 5px;
+}
+
+.register button {
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  background-color: #008997;
+  color: white;
+  background-image: linear-gradient(#6439ff, #3d249b);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.forgotpass a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #382091;
+  font-weight: 500;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.regimg img {
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 4rem;
+}
