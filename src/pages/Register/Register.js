@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "./register.css";
 
 export default function Register() {
-  document.body.style.backgroundImage = "url('bg.svg')";
+  // document.body.style.backgroundImage = "url('bg.svg')";
   const navigate = useNavigate();
   const location = useLocation();
   const [name, setname] = useState("");
@@ -299,7 +299,7 @@ export default function Register() {
 
   return (
     <div className="registerpage">
-      <div className="wrapper">
+      <div className="container" style={{ padding: 0 }}>
         <div className="registerform">
           <div className="titlemsg">Register Employee</div>
           <div className="leftcolumnreg">{renderform}</div>
