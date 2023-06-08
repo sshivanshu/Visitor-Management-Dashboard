@@ -8,13 +8,12 @@ import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
 
-
 const Sidebar = () => {
   const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="sidebar">
       <div className="top">
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/dashboard" style={{ textDecoration: "none" }}>
           <span className="logo">Admin</span>
         </Link>
       </div>
@@ -22,28 +21,37 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/dashboard" style={{ textDecoration: "none" }}>
             <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
             </li>
           </Link>
-          <p className="title">LISTS</p>
+          <p className="title">Visit Requests</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
               <span>Users</span>
             </li>
           </Link>
-
-
-
-
-          <p className="title">USER</p>
-          <Link to="/Profile" style={{ textDecoration: "none" }}>
+          <Link to="/activerequests" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
-              <span>Profile</span>
+              <span>Active Requests</span>
+            </li>
+          </Link>
+          <Link to="/pendingrequests" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>Pending Requests</span>
+            </li>
+          </Link>
+
+          <p className="title">USER</p>
+          <Link to="/register" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>Employee Registration</span>
             </li>
           </Link>
           <li>

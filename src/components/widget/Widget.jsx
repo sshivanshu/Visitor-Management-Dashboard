@@ -2,8 +2,6 @@ import "./widget.scss";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 
-
-
 const Widget = ({ type }) => {
   let data;
 
@@ -12,11 +10,11 @@ const Widget = ({ type }) => {
   const diff = 20;
 
   switch (type) {
-    case "user":
+    case "Qrcode":
       data = {
-        title: "USERS",
+        title: "Scan a Qrcode",
         isMoney: false,
-        link: "See all users",
+        link: "qrscanner",
         icon: (
           <PersonOutlinedIcon
             className="icon"
@@ -28,35 +26,35 @@ const Widget = ({ type }) => {
         ),
       };
       break;
-    case "order":
+    case "active":
       data = {
-        title: "Active Appointment",
+        title: "Active Appointments",
         isMoney: false,
-        link: "View all",
+        link: "activerequests",
         icon: (
           <PersonOutlinedIcon
-          className="icon"
-          style={{
-            color: "crimson",
-            backgroundColor: "rgba(255, 0, 0, 0.2)",
-          }}
-        />
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "rgba(255, 0, 0, 0.2)",
+            }}
+          />
         ),
       };
       break;
-    case "earning":
+    case "pending":
       data = {
         title: "Pending Appointments",
         isMoney: true,
-        link: "View all",
+        link: "pendingrequests",
         icon: (
           <PersonOutlinedIcon
-          className="icon"
-          style={{
-            color: "crimson",
-            backgroundColor: "rgba(255, 0, 0, 0.2)",
-          }}
-        />
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "rgba(255, 0, 0, 0.2)",
+            }}
+          />
         ),
       };
       break;
@@ -65,7 +63,6 @@ const Widget = ({ type }) => {
         title: "Create an Appointment",
         isMoney: true,
         link: "",
-    
       };
       break;
     default:
@@ -76,15 +73,15 @@ const Widget = ({ type }) => {
     <div className="widget">
       <div className="left">
         <span className="title">{data.title}</span>
-        <span className="counter">
-          {/* {data.isMoney && "$"} {amount} */}
-        </span>
-        <span className="link">{data.link}</span>
+        <span className="counter">{/* {data.isMoney && "$"} {amount} */}</span>
+        <a className="link" href={data.link}>
+          Open
+        </a>
       </div>
       <div className="right">
         <div className="percentage positive">
-          <KeyboardArrowUpIcon />
-          {diff} %
+          {/* <KeyboardArrowUpIcon /> */}
+          {/* {diff} % */}
         </div>
         {data.icon}
       </div>

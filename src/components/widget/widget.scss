@@ -3,8 +3,8 @@
   justify-content: space-between;
   flex: 1;
   padding: 10px;
-  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 0px 0px 17px 2px rgb(201 201 201 / 76%);
+  box-shadow: 0px 0px 17px 2px rgb(201 201 201 / 76%);
   border-radius: 10px;
   height: 100px;
 
@@ -17,7 +17,7 @@
     .title {
       font-weight: bold;
       font-size: 14px;
-      color: rgb(160, 160, 160);
+      color: rgb(32, 32, 32);
     }
 
     .counter {
@@ -29,6 +29,8 @@
       width: max-content;
       font-size: 12px;
       border-bottom: 1px solid gray;
+      text-decoration: none;
+      color: grey;
     }
 
     .percentage {
