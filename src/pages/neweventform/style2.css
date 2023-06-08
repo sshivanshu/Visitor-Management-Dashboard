@@ -1,17 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 body {
-  min-height: 100vh;
+  /* min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  background: rgb(130, 106, 251);
+  padding: 20px; */
+  /* background: rgb(130, 106, 251); */
 }
 .container {
   position: relative;
@@ -38,7 +35,8 @@ body {
 .input-box label {
   color: #333;
 }
-.form .input-box input,.form .select-box {
+.form .input-box input,
+.form .select-box {
   position: relative;
   height: 50px;
   width: 100%;
@@ -66,7 +64,8 @@ body {
   font-weight: 400;
   margin-bottom: 8px;
 }
-.form .wifi-option,.form .wifi {
+.form .wifi-option,
+.form .wifi {
   display: flex;
   align-items: center;
   column-gap: 50px;
@@ -78,7 +77,8 @@ body {
 .wifi input {
   accent-color: rgb(130, 106, 251);
 }
-.form .wifi input,.form .wifi label {
+.form .wifi input,
+.form .wifi label {
   cursor: pointer;
 }
 .wifi label {
@@ -90,7 +90,8 @@ input[type="radio"] {
   height: 2em;
   position: relative;
 }
-.address input,.address .select-box {
+.address input,
+.address .select-box {
   margin-top: 15px;
 }
 .select-box select {
@@ -120,7 +121,8 @@ input[type="radio"] {
   .form .column {
     flex-wrap: wrap;
   }
-  .form .wifi-option,.form .wifi {
+  .form .wifi-option,
+  .form .wifi {
     row-gap: 15px;
   }
-} 
+}

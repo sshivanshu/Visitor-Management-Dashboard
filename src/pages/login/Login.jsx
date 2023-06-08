@@ -31,7 +31,7 @@ const Login = () => {
           document.body.attributeStyleMap.clear();
           localStorage.setItem("user", response.data.data[0]);
           if (response.data.data[0].role === "host") {
-            navigate("/", { state: { username: username } });
+            navigate("/dashboard", { state: { username: username } });
           } else if (response.data.data[0].role === "security") {
             navigate("/securitydashboard", { state: { username: username } });
           }
@@ -76,11 +76,11 @@ const Login = () => {
             </div>
             <button
               onClick={(e) => {
-                navigate("/register", { state: { role: "admin" } });
+                navigate("/newapplicationform", { state: { role: "admin" } });
               }}
             >
               {" "}
-              Register
+              Schedule a Visit
             </button>
           </div>
         </div>
